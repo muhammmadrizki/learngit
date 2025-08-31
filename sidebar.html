@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        width: 220px;
+        height: 100vh;
+        background-color: #222;
+        color: #fff;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+      .sidebar h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1.2em;
+        color: #f4f4f4;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sidebar ul li {
+        margin: 15px 0;
+      }
+
+      .sidebar ul li a {
+        color: #ccc;
+        text-decoration: none;
+        display: block;
+        padding: 8px 12px;
+        border-radius: 6px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      .sidebar ul li a:hover {
+        background: #444;
+        color: #fff;
+      }
+
+      /* Content */
+      .content {
+        margin-left: 240px;
+        padding: 20px;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>My Menu</h2>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="header.html">📑 Header</a></li>
+        <li><a href="footer.html">🔻 Footer</a></li>
+        <li><a href="sidebar.html">📂 Sidebar</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h1>Welcome!</h1>
+      <p>Ini adalah halaman dengan sidebar di sebelah kiri.</p>
+    </div>
+  </body>
+</html>
